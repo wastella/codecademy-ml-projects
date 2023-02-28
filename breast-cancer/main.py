@@ -9,3 +9,6 @@ training_data, validation_data, training_labels, validation_labels = train_test_
 classifier = KNeighborsClassifier(n_neighbors=3)
 
 classifier.fit(training_data, training_labels)
+
+score = classifier.score(validation_data, validation_labels)
+print(score)
