@@ -1,10 +1,5 @@
 from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
 
 breast_cancer_data = load_breast_cancer()
 
-print(breast_cancer_data.data[0])
-
-print(breast_cancer_data.feature_names)
-
-print(breast_cancer_data.target)
-print(breast_cancer_data.target_names)
