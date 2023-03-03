@@ -11,3 +11,6 @@ data = df[["Red", "Green", "Blue", "Gold", "White", "Black", "Orange"]]
 train_data, test_data, train_labels, test_labels = train_test_split(data, labels)
 
 tree = DecisionTreeClassifier(random_state=1)
+
+tree.fit(train_data, train_labels)
+
