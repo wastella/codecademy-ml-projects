@@ -14,3 +14,6 @@ tree = DecisionTreeClassifier(random_state=1)
 
 tree.fit(train_data, train_labels)
 
+score = tree.score(test_data, test_labels)
+
+print(score)
