@@ -10,7 +10,12 @@ data = df[["Red", "Green", "Blue", "Gold", "White", "Black", "Orange"]]
 
 train_data, test_data, train_labels, test_labels = train_test_split(data, labels)
 
+scores = []
+
 for i in range(1, 21):
     tree = DecisionTreeClassifier(random_state=1, max_depth=i)
     tree.fit(train_data, train_labels)
-    print(tree.score(test_data, test_labels))
+    scores.append(tree.score(test_data, test_labels))
+
+plt.plot(range(1,21), scores)
+plt.show()
