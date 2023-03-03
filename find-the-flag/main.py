@@ -6,3 +6,4 @@ import matplotlib.pyplot as plt
 df = pd.read_csv("flags.csv", header=0)
 
 labels = df["Landmass"]
+data = df[["Red", "Green", "Blue", "Gold", "White", "Black", "Orange"]]
