@@ -7,3 +7,5 @@ df = pd.read_csv("flags.csv", header=0)
 
 labels = df["Landmass"]
 data = df[["Red", "Green", "Blue", "Gold", "White", "Black", "Orange"]]
+
+train_data, test_data, train_labels, test_labels = train_test_split(data, labels)
