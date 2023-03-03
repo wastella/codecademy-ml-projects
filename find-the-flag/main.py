@@ -5,5 +5,4 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv("flags.csv", header=0)
 
-print(df.columns)
-print(df.head())
+labels = df["Landmass"]
