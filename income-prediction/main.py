@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn import tree
 from sklearn.ensemble import RandomForestClassifier
 
-df = pd.read_csv("income.csv", header=0)
+df = pd.read_csv("income.csv", header=0, delimiter = ", ")
 
 
 print(df.iloc[1])
