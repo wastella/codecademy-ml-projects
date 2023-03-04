@@ -14,6 +14,8 @@ income_data = df[["income"]]
 
 data = df[["age", "capital-gain", "capital-loss", "hours-per-week", "sex"]]
 
-train_data, test_data, train_labels, test_labels = train_test_split(data, income_data, randomstate=1)
+train_data, test_data, train_labels, test_labels = train_test_split(data, income_data, random_state=1)
 
 classifier = RandomForestClassifier(random_state=1)
+
+classifier.fit(train_data, train_labels)
