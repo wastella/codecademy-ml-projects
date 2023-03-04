@@ -13,3 +13,5 @@ df = pd.read_csv("income.csv", header=0, delimiter = ", ")
 income_data = df[["income"]]
 
 data = df[["age", "capital-gain", "capital-loss", "hours-per-week", "sex"]]
+
+train_data, test_data, train_labels, test_labels = train_test_split(data, income_data, randomstate=1)
