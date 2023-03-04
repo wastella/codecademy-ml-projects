@@ -11,4 +11,4 @@ from sklearn.ensemble import RandomForestClassifier
 df = pd.read_csv("income.csv", header=0)
 
 
-print(df.columns)
+print(df.iloc[1])
