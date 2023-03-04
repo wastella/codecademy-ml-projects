@@ -11,3 +11,5 @@ from sklearn.ensemble import RandomForestClassifier
 df = pd.read_csv("income.csv", header=0, delimiter = ", ")
 
 income_data = df[["income"]]
+
+data = df[["age", "capital-gain", "capital-loss", "hours-per-week", "sex"]]
