@@ -10,5 +10,4 @@ from sklearn.ensemble import RandomForestClassifier
 
 df = pd.read_csv("income.csv", header=0, delimiter = ", ")
 
-
-print(df.iloc[1])
+income_data = df[["income"]]
